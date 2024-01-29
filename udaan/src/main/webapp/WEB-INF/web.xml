@@ -1,0 +1,80 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<servlet>
+		<servlet-name>FilghtInsert</servlet-name>
+		<display-name>FilghtInsert</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.FilghtInsert</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ForgotPassword</servlet-name>
+		<display-name>ForgotPassword</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.ForgotPassword</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ListOfFlights</servlet-name>
+		<display-name>ListOfFlights</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.ListOfFlights</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginOfAdmin</servlet-name>
+		<display-name>LoginOfAdmin</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.LoginOfAdmin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginOfUser</servlet-name>
+		<display-name>LoginOfUser</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.LoginOfUser</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<display-name>Logout</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.Logout</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegistrationOfUser</servlet-name>
+		<display-name>RegistrationOfUser</display-name>
+		<description></description>
+		<servlet-class>com.flightbooking.servlets.RegistrationOfUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FilghtInsert</servlet-name>
+		<url-pattern>/FilghtInsert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ForgotPassword</servlet-name>
+		<url-pattern>/ForgotPassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListOfFlights</servlet-name>
+		<url-pattern>/ListOfFlights</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginOfAdmin</servlet-name>
+		<url-pattern>/LoginOfAdmin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginOfUser</servlet-name>
+		<url-pattern>/LoginOfUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegistrationOfUser</servlet-name>
+		<url-pattern>/RegistrationOfUser</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Flyaway.jsp</welcome-file>		
+	</welcome-file-list>
+
+</web-app>

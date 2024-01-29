@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Credit/Debit Card Payment</title>
+<style>
+    body {
+        background-image: url('airplane_background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #73C2FB;
+    }
+
+    .container {
+        width: 50%;
+        margin: auto;
+        margin-top: 100px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 0.8;
+    }
+
+    .card-body {
+        height: 350px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input[type="tel"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 40%;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 50%;
+    }
+
+    input[type="button"] {
+        width: 40%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="button"]:hover {
+        background-color: #45a049;
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <span style="font-size: 24px; font-weight: bold; margin-top:10px">CREDIT/DEBIT CARD PAYMENT</span>
+            </div>
+            <div class="col-md-6 text-right" style="margin-top: -5px;">
+                <img src="https://img.icons8.com/color/36/000000/visa.png"> <img
+                    src="https://img.icons8.com/color/36/000000/mastercard.png"> <img
+                    src="https://img.icons8.com/color/36/000000/amex.png">
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="form-group">
+                <label for="cc-number" class="control-label">CARD NUMBER</label>
+                <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="- - - - /- - - - /- - - - /- - - -" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="cc-exp" class="control-label">CARD EXPIRY</label>
+                        <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="- - / - -" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="cc-cvc" class="control-label">CARD CVC</label>
+                        <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="- - -" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="numeric" class="control-label">CARD HOLDER NAME</label>
+                <input type="text" class="input-lg form-control">
+            </div>
+            <div class="form-group">
+                <a href="VerifyCode.jsp">
+                    <input value="MAKE PAYMENT" type="button" style="font-size: 0.8rem;">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
